@@ -1,0 +1,42 @@
+# 1.
+
+mysql> create database fingerprints;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use fingerprints;
+Database changed
+mysql> create table fingerprints(Sno int, Name varchar(255), Filename varchar(255), primary key(Sno, Name, Filename));
+Query OK, 0 rows affected (0.03 sec)
+
+mysql> insert into fingerprints values(1, "A", "101_1.bmp");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into fingerprints values(2, "B", "101_2.bmp");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into fingerprints values(3, "C", "102_1.bmp");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into fingerprints values(4, "D", "102_2.bmp");
+Query OK, 1 row affected (0.00 sec)
+ 
+ 
+#2.
+
+mysql> create database architecture;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use architecture;
+Database changed
+
+mysql> create table worker_input(Wid int, Material varchar(255), Amount varchar(10), Reason varchar(255), Date_of_request datetime);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create table worker_status(Wid int, Material varchar(255), Amount varchar(10), AcceptorRejectorRemarks varchar(255), Date_of_view datetime, Expected_arrival datetime);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create table architect_input(Wid int, Material varchar(255), Amount varchar(10), Reason varchar(255),AcceptorRejectorRemarks varchar(255), Date_of_view datetime, Expected_arrival datetime);
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create table wid(name varchar(255) not null unique, wid int primary key);
+Query OK, 0 rows affected (0.03 sec)
