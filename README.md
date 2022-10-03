@@ -1,6 +1,7 @@
 # architecture-requirements
 Time-induced python program to retrieve and input data in a database for requirements in architecture. Input is done after assessing the biometrics.
 
+
 The Architecture Requirements Specification provides a quantitative view of the solution, stating measurable criteria that must be met during the implementation of the architecture.
 
 Often workers find it difficult to express their requirements and get information about time taken in the process to the architect.
