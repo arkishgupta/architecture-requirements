@@ -35,9 +35,10 @@ NOTE:
 2.	Assuming requirements are fulfilled by the expected arrival time, worker status is automatically cleared from the database.
 
 
-NOTE: 1. To switch between worker and architect, exit prompt.
-             2. Architect must exit prompt after each use to maintain his authenticity.
-             3. Names of workers are unique. 
+NOTE: 
+1. To switch between worker and architect, exit prompt.
+2. 2. Architect must exit prompt after each use to maintain his authenticity.
+3. 3. Names of workers are unique. 
 
 
 Tables worker_input, worker_status, architect_input, wid have been employed for this purpose.
